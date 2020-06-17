@@ -1,0 +1,127 @@
+﻿body{
+    font-family:Georgia
+}
+
+.main{
+  
+    background-color:darkgreen; 
+}
+.header{
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image/G.jpg');
+     padding: 0 0 127px 0;
+     background-repeat:no-repeat;
+    
+}
+.menu{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.menu li{
+    display:inline;
+}
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 6px 20px;
+    border: 1px solid white;
+    transition: 0.6s;
+}
+.menu li a:hover{
+     background: blueviolet;
+     cursor:pointer;
+}
+.title{
+   PADDING: 139px 0px 3px 112px;
+   MARGIN: 0 0 0 300px;
+   color:aqua;
+}
+.title h1{
+    color:#FFF;
+        font-family: serif;
+        
+}
+.title h2{
+    color: red;
+        padding: 0 0 0 107px;
+
+    font:35px "Work Sans";
+    
+}
+.title :hover{
+    color:aliceblue;
+    cursor:pointer;
+}
+
+.button{
+     padding:0 0 0 40%;
+     
+}
+.button li{
+    display:inline;
+}
+.button a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    transition: 0.6s;
+}
+.button a:hover {
+        background: blueviolet;
+    }
+
+
+.content{
+    background-image: url(../image/bgbanner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+}
+
+.footer{
+    background-color:black;
+}
+.footer ul{
+    list-style-type:none;
+    margin: 0 0 0 46%;
+    padding: 11px 0px 12px 1px;
+    overflow:hidden;
+}
+.footer li{
+    padding:0 0 10px 0;
+    color:white;
+}
+.batn{
+width: 40%;
+    box-sizing: border-box;
+    padding: 10px 27px;
+    border-top: 30px;
+    outline: none;
+    border: none;
+    background: #3B5998;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    transition:0.6s;
+}
+.batn:hover{
+      background-color:orange;
+      cursor:pointer;
+}
+.buttonpart{
+    margin: 4% 29%;
+}
+.pricedetails{
+       text-align: center;
+background: dimgray;
+padding: 14px;
+color: #eee;
+width: 25%;
+margin: 3% 34%;
+}
+.cartheader{
+    text-align:center;
+}

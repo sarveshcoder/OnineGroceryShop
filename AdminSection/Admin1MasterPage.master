@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin1MasterPage.master.cs" Inherits="AdminSection_Admin1MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/MASTERStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="main">
+            <div class="header">
+
+                <div class="menu">
+                    <ul>
+
+                        <li>
+                            <asp:LinkButton ID="lbtn" runat="server" OnClick="lbtn_Click"  >Home</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="addproduct" runat="server" OnClick="addproduct_Click" >AddProduct</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="Getorder" runat="server" OnClick="Getorder_Click"  >Orders</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="Cart" runat="server" OnClick="Cart_Click">Cart</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="Delivery" runat="server" >UpdateDeliviery</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="payment" runat="server" OnClick="payment_Click">Payment</asp:LinkButton></li>
+                         <li>
+                            <asp:LinkButton ID="Logout" runat="server">LogOutt</asp:LinkButton></li>
+                         
+                    </ul>
+                </div>
+                <div class="title">
+                     <h1> WELCOME TO MY ONLINE GROCERY STORE</h1>
+                  
+                    <h2>Your favorite Neighborhood store</h2>
+                </div>
+
+               
+
+            </div>
+
+
+
+            <div class="content">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="footer">
+                <ul>
+                    <li>Name:- Sarvesh Maurya</li>
+                    <li>Enrollment No:- 175971914</li>
+                    <li>Guided By:- Jagdish Joshi</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GROCERYMasterPage.master.cs" Inherits="GROCERYMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/MASTERStyleSheet.css" rel="stylesheet" />
+    <link href="css/RegistrationStyleSheet.css" rel="stylesheet" />
+    <link href="css/LOGINStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="main">
+            <div class="header">
+
+                <div class="menu">
+                    <ul>
+
+                        <li>
+                            <asp:LinkButton ID="lbtn" runat="server" OnClick="lbtn_Click">Home</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="contact" runat="server" OnClick="contact_Click">Contact</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="about" runat="server">About</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="srvices" runat="server">Services</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="policies" runat="server">Policies</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="lbtnorder" runat="server" OnClick="lbtnorder_Click">My Orders</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="lbtnprofile" runat="server" OnClick="lbtnprofile_Click">Profile</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="lbtnlogout" runat="server" OnClick="lbtnlogout_Click">Logout</asp:LinkButton></li>
+                        <li>
+                        <div class="cart">
+                            <div class="noofitem">
+                                <asp:Label ID="lblnoofitemincart" runat="server">0</asp:Label>
+                            </div>
+                            <div class="imgcart">
+                                CART<asp:ImageButton ID="lbtnmycart" runat="server"  ImageUrl="~/image/cart.png" CssClass="imgcartimg" />
+                            </div>
+
+                        </div>
+                            </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <h1>WELCOME TO MY ONLINE GROCERY STORE</h1>
+
+                    <h2>Your favorite Neighborhood store</h2>
+                </div>
+
+                <div class="button">
+                    <ul>
+                        <li>
+                            <asp:LinkButton ID="MIDBT" runat="server" OnClick="MIDBT_Click">SIGN IN</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="signup" runat="server" OnClick="signup_Click">SIGN UP</asp:LinkButton></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <div class="content">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="footer">
+                <ul>
+                    <li>Name:- Sarvesh Maurya</li>
+                    <li>Enrollment No:- 175971914</li>
+                    <li>Guided By:- Jagdish Joshi</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
